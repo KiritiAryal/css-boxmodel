@@ -2,8 +2,18 @@
     border: 1px solid black;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 1200px;
     flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    /* overflow: scroll; */
+    
+    /* aligning content within the box */
+    /* align-content: space-around; */
+    margin-bottom: 20px;
 }
 
 .child{
@@ -11,4 +21,25 @@
     margin: 10px;
     border: 1px solid red;
     height: 200px;
+}
+
+.parent1{
+    border: 1px solid black;
+    display: flex;
+    height: 500px;
+    /* aligns items horizontally when flex-direction is default(row)*/
+    justify-content: center;
+    /* aligns items vertically when flex-direction is default(row)*/
+    align-items: center;
+}
+
+/* By default the order is 0, the greatest order goes last. */
+.order{
+    order: 1;
+}
+.order1{
+    order: -1;
+}
+.order2{
+    order: 2;;
 }
